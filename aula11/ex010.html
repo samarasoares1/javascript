@@ -16,7 +16,7 @@
             padding: 20px;
             margin: auto;
             width: 400px;
-            height: 250px;
+            height: max-content;
             background-color: rgb(186, 210, 231);
             border-radius: 10px;
         }
@@ -27,6 +27,7 @@
             margin-top: 20px;
             padding: 10px;
             font-size: 1em;
+            text-align: center;
         }
         input[type = 'button']{
             margin: auto;
@@ -36,6 +37,10 @@
             color: white;
             font-size: 1.2em;
             border-radius: 10px;
+        }
+        input[type = 'button']:hover{
+            cursor: pointer;
+            font-weight: bolder;
         }
     </style>
 </head>
@@ -56,9 +61,9 @@
         var txtv = window.document.querySelector('input#txtvel')
         var res = window.document.querySelector('div#res')
         var vel = Number(txtv.value)
-        res.innerHTML = (`Sua velocidade atual é de <strong>${vel}Km/h</strong>`)
+        res.innerHTML = (`<p>Sua velocidade atual é de <strong>${vel}Km/h</strong></p>`)
         if (vel > 60){
-            res.innerHTML += `<p>Você está MULTADO por exceto</p>`
+            res.innerHTML += `<p>Você está MULTADO por excesso de velocidade.</p>`
         }
         res.innerHTML += (`<p>Dirija sempre com o cinto de segurança!</p>`)
         }
