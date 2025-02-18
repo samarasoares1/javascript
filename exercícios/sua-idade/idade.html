@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Verificador de idade</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="idade.css">
 </head>
 <body>
     <header>
@@ -12,16 +12,27 @@
     </header>
     <section>
         <div>
-            <form action="#">
-                <label for="ano"></label>
-                
-            </form>
+            <p>Ano de nascimento:
+                <input type="number" name="ano" id="ano" min="0">
+            </p>
+            <p>Sexo:
+                <input type="radio" name="sexo" id="mas" checked>
+                <label for="mas">Marculino</label>
+                <input type="radio" name="sexo" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
+            <p><input type="button" value="Verificar" onclick="verificar()"></p>
         </div>
-        <div></div>
+        
+        <div id="res" >
+            Preencha os dados acima para ver o resultado!
+    
+        </div>
+
     </section>
     <footer>
         <p><a href="cursoemvideo.com">@CursoemVideo</a></p>
     </footer>
-    <script src="script.js"></script>
+    <script src="idade.js"></script>
 </body>
 </html>
