@@ -11,6 +11,10 @@ body{
 header{
     color: white;
     text-align: center;
+    padding: 10px;
+}
+p{
+    padding: 10px;
 }
 section{
     background-color: white;

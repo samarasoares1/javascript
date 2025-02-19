@@ -3,20 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hoda do Dia</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Tabuada</title>
+    <link rel="stylesheet" href="ex017.css">
 </head>
 <body>
     <header>
-        <h1>Hora do Dia</h1>
+        <h1>Tabuada</h1>
     </header>
     <section>
-        <div>Testando</div>
-        <div></div>
+        <div id="tab">
+            <label for="num">Número:</label>
+            <input type="number" name="num" id="num">
+            <input type="button" value="Gerar Tabuada" onclick="tabuada()">
+        </div>
+        <div id="res">Resolução</div>
     </section>
     <footer>
         <p><a href="cursoemvideo.com">@CursoemVideo</a></p>
     </footer>
-    <script src="script.js"></script>
+    <script type="text/javascript" src="ex017.js"> </script>
 </body>
 </html>
