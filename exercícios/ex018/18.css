@@ -13,6 +13,7 @@ header{
     text-align: center;
     padding: 20px;
 }
+
 section{
     background-color: white;
     border-radius: 10px;
@@ -21,8 +22,12 @@ section{
     margin: auto;
     box-shadow: 2px 2px 3px rgba(128, 128, 128, 0.488);
 }
+p{
+    padding: 10px;
+}
 select#flista{
     width: 150px;
+    
 }
 footer{
     text-align: center;
